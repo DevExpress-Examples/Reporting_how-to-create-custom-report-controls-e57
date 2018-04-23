@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20A336E9-ECA3-421D-9C15-81F2478001E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomControls</RootNamespace>
+    <AssemblyName>CustomControls</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.1">
+      <Name>DevExpress.Data.v10.1</Name>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.1">
+      <Name>DevExpress.Utils.v10.1</Name>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v10.1.Core">
+      <Name>DevExpress.Charts.v10.1.Core</Name>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v10.1">
+      <Name>DevExpress.XtraCharts.v10.1</Name>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v10.1">
+      <Name>DevExpress.XtraNavBar.v10.1</Name>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v10.1">
+      <Name>DevExpress.XtraPrinting.v10.1</Name>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v10.1.Core">
+      <Name>DevExpress.XtraPivotGrid.v10.1.Core</Name>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v10.1">
+      <Name>DevExpress.XtraPivotGrid.v10.1</Name>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v10.1.Extensions">
+      <Name>DevExpress.XtraReports.v10.1.Extensions</Name>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v10.1">
+      <Name>DevExpress.XtraReports.v10.1</Name>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v10.1.Core">
+      <Name>DevExpress.RichEdit.v10.1.Core</Name>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v10.1">
+      <Name>DevExpress.XtraRichEdit.v10.1</Name>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="XRNumericLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProgressBar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XRNumericLabel.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent></PostBuildEvent>
+  </PropertyGroup>
+</Project>
