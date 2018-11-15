@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [ProgressBar.cs](./CS/ProgressBar.cs) (VB: [ProgressBar.vb](./VB/ProgressBar.vb))
+* [XRNumericLabel.cs](./CS/XRNumericLabel.cs) (VB: [XRNumericLabel.vb](./VB/XRNumericLabel.vb))
+<!-- default file list end -->
 # How to create custom report controls
 
 
